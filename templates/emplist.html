@@ -1,0 +1,20 @@
+<head>
+    <title> Employee list</title>
+</head>
+
+<body>
+{% if elist %}
+<ol>
+    {% for employee in elist %}
+    <ol> {{ employee.first_name }} {{ employee.last_name }} </ol>
+    {% endfor %}
+
+
+</ol>
+{% endif %}
+<form action="/your-name/" method="post">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+</body>

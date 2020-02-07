@@ -8,6 +8,6 @@ class Employee(models.Model):
     id = models.IntegerField(primary_key= True)
 
     def __str__(self):
-        return self.all
+        return self.first_name
 
 
